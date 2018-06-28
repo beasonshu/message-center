@@ -21,6 +21,8 @@ public class UserMapperTest {
     @Autowired
     private UserMapper mapper;
 
+    
+
     @Test
     public void testInset() {
         User user = new User("Jaycekon","1234","1234","123");
