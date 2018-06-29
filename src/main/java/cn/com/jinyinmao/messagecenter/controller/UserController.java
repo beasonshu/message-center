@@ -2,12 +2,13 @@ package cn.com.jinyinmao.messagecenter.controller;
 
 import cn.com.jinyinmao.messagecenter.bean.User;
 import cn.com.jinyinmao.messagecenter.mapper.UserMapper;
-import io.swagger.annotations.*;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
+import io.swagger.annotations.ApiParam;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import tk.mybatis.spring.annotation.MapperScan;
 
-import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -53,6 +54,7 @@ public class UserController {
     @ApiParam(name = "id", value = "用户ID", required = true)
     @RequestMapping(value="/{id}", method=RequestMethod.DELETE)
     public String deleteUser(@PathVariable Long id) {
+        mapper.deleteByPrimaryKey(id);
         return "success";
     }
 }
