@@ -11,7 +11,8 @@ import springfox.documentation.spi.DocumentationType;
 import springfox.documentation.spring.web.plugins.Docket;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
-/**
+/** 
+ * localhost:8081/swagger-ui.html
  * Created by shu.xinghu on 2018/6/28.
  */
 @Configuration
@@ -58,7 +59,7 @@ public class Swagger2 {
         return new ApiInfoBuilder()
                 .title("Demo使用Swagger2构建RESTful APIs")
                 .description("微信打卡服务")
-                .contact(new Contact("shuxinghu", "http://petstore.swagger.io/v2/swagger.json", "shu.xinghu@jinyinmao.com.cn"))
+                .contact(new Contact("数据库", "http://petstore.swagger.io/v2/swagger.json", "beasonshu@sina.com"))
                 .version("1.0")
                 .build();
     }

@@ -1,20 +1,24 @@
 package cn.com.jinyinmao.messagecenter.bean;
 
 import javax.persistence.*;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import java.io.Serializable;
 
 /**
  * Created by shu.xinghu on 2018/6/27.
  */
 public class BaseEntity implements Serializable{
+	@JsonIgnore
     @Id
     @Column(name = "Id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
-
+	@JsonIgnore
     @Transient
     private Integer page = 1;
-
+	@JsonIgnore
     @Transient
     private Integer rows = 10;
 

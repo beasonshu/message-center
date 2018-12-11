@@ -1,4 +1,6 @@
 package cn.com.jinyinmao.messagecenter.bean;
+import javax.persistence.Column;
+
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -12,7 +14,9 @@ import lombok.experimental.Accessors;
 @AllArgsConstructor
 @Accessors(chain = true)
 public class User extends BaseEntity{
+	@Column(name = "user_name")
     private String username;
+	@Column(name = "id_card")
     private String idCard;
     private String phone;
     private String password;
