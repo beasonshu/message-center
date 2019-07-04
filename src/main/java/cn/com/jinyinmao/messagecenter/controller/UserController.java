@@ -14,7 +14,7 @@ import java.util.List;
 /**
  * Created by shu.xinghu on 2018/6/28.
  */
-@Api(tags = "测试用例")
+@Api(tags = "用户")
 @RestController
 @MapperScan("cn.com.jinyinmao.messagecenter.mapper")
 @RequestMapping(value="/users")

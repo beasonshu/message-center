@@ -28,6 +28,15 @@ public class Swagger2 {
                 .apis(RequestHandlerSelectors.basePackage("cn.com.jinyinmao.messagecenter.controller"))
                 .paths(PathSelectors.any()).build();
     }
+    @Bean
+    public Docket webApi1(){
+        return new Docket(DocumentationType.SWAGGER_2)
+                .groupName("aba")
+                .apiInfo(apiInfo())
+                .select()
+                .apis(RequestHandlerSelectors.basePackage("cn.com.jinyinmao.messagecenter.controller"))
+                .paths(PathSelectors.any()).build();
+    }
 
     /**
      swagger2使用说明：
@@ -59,7 +68,7 @@ public class Swagger2 {
         return new ApiInfoBuilder()
                 .title("Demo使用Swagger2构建RESTful APIs")
                 .description("微信打卡服务")
-                .contact(new Contact("数据库", "http://petstore.swagger.io/v2/swagger.json", "beasonshu@sina.com"))
+                .contact(new Contact("shuxinghu", "http://petstore.swagger.io/v2/swagger.json", "beasonshu@sina.com"))
                 .version("1.0")
                 .build();
     }
