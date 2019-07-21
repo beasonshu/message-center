@@ -25,7 +25,7 @@ public class Swagger2 {
                 .groupName("接口文档")
                 .apiInfo(apiInfo())
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("cn.com.jinyinmao.messagecenter.controller"))
+                .apis(RequestHandlerSelectors.basePackage("beason.tk.controller"))
                 .paths(PathSelectors.any()).build();
     }
     @Bean
@@ -34,7 +34,7 @@ public class Swagger2 {
                 .groupName("aba")
                 .apiInfo(apiInfo())
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("cn.com.jinyinmao.messagecenter.controller"))
+                .apis(RequestHandlerSelectors.basePackage("beason.tk.controller"))
                 .paths(PathSelectors.any()).build();
     }
 
