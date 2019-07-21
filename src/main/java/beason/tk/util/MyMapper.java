@@ -1,4 +1,4 @@
-package cn.com.jinyinmao.messagecenter.util;
+package beason.tk.util;
 
 import tk.mybatis.mapper.common.Mapper;
 import tk.mybatis.mapper.common.MySqlMapper;

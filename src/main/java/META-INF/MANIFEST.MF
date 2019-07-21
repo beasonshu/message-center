@@ -36,5 +36,5 @@ Class-Path: spring-aop-5.0.7.RELEASE.jar spring-data-redis-2.0.8.RELEA
  ls-1.5.20.jar jsqlparser-1.0.jar tomcat-embed-el-8.5.31.jar validatio
  n-api-2.0.1.Final.jar mapper-weekend-1.1.3.jar spring-boot-starter-js
  on-2.0.3.RELEASE.jar spring-boot-autoconfigure-2.0.3.RELEASE.jar
-Main-Class: cn.com.jinyinmao.messagecenter.MessageCenterApplication
+Main-Class: beason.tk.MessageCenterApplication
 

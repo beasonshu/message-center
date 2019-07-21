@@ -1,7 +1,7 @@
-package cn.com.jinyinmao.messagecenter.mapper;
+package beason.tk.mapper;
 
-import cn.com.jinyinmao.messagecenter.bean.User;
-import cn.com.jinyinmao.messagecenter.util.MyMapper;
+import beason.tk.bean.User;
+import beason.tk.util.MyMapper;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
 

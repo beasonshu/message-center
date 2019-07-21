@@ -1,7 +1,7 @@
-package cn.com.jinyinmao.messagecenter.controller;
+package beason.tk.controller;
 
-import cn.com.jinyinmao.messagecenter.bean.User;
-import cn.com.jinyinmao.messagecenter.mapper.UserMapper;
+import beason.tk.bean.User;
+import beason.tk.mapper.UserMapper;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;

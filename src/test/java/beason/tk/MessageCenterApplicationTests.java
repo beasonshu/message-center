@@ -1,4 +1,4 @@
-package cn.com.jinyinmao.messagecenter;
+package beason.tk;
 
 import org.junit.Assert;
 import org.junit.Test;

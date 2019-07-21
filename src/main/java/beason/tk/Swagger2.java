@@ -1,4 +1,4 @@
-package cn.com.jinyinmao.messagecenter;
+package beason.tk;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

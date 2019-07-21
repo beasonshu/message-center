@@ -1,4 +1,4 @@
-package cn.com.jinyinmao.messagecenter.bean;
+package beason.tk.bean;
 
 import javax.persistence.*;
 

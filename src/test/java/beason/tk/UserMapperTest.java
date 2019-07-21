@@ -1,7 +1,7 @@
-package cn.com.jinyinmao.messagecenter;
+package beason.tk;
 
-import cn.com.jinyinmao.messagecenter.bean.User;
-import cn.com.jinyinmao.messagecenter.mapper.UserMapper;
+import beason.tk.bean.User;
+import beason.tk.mapper.UserMapper;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
