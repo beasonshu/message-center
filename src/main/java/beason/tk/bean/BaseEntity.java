@@ -12,7 +12,6 @@ import java.io.Serializable;
 public class BaseEntity implements Serializable{
 	@JsonIgnore
     @Id
-    @Column(name = "Id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 	@JsonIgnore

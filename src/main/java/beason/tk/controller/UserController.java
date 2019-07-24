@@ -16,7 +16,7 @@ import java.util.List;
  */
 @Api(tags = "用户")
 @RestController
-@MapperScan("cn.com.jinyinmao.messagecenter.mapper")
+@MapperScan("beason.tk.mapper")
 @RequestMapping(value="/users")
 public class UserController {
 

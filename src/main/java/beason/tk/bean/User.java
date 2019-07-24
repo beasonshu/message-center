@@ -18,6 +18,6 @@ public class User extends BaseEntity{
     private String username;
 	@Column(name = "id_card")
     private String idCard;
-    private String phone;
+    private int phone;
     private String password;
 }
