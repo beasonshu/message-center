@@ -2,6 +2,7 @@ package beason.tk.mapper;
 
 import beason.tk.bean.User;
 import beason.tk.util.MyMapper;
+import org.apache.ibatis.annotations.Delete;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
 
@@ -15,4 +16,7 @@ public interface UserMapper extends MyMapper<User> {
 
     @Select("select * from user where username=#{id}")
     User selectById(Long id);
+
+    @Delete("delete from user where phone=#{phone}")
+    int deleteUerByPhone(String phone);
 }

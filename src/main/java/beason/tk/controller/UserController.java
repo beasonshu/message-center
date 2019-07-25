@@ -9,6 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import tk.mybatis.spring.annotation.MapperScan;
 
+import javax.persistence.Column;
 import java.util.List;
 
 /**
@@ -55,6 +56,14 @@ public class UserController {
     @RequestMapping(value="/{id}", method=RequestMethod.DELETE)
     public String deleteUser(@PathVariable Long id) {
         mapper.deleteByPrimaryKey(id);
+        return "success";
+    }
+
+    @ApiOperation(value="删除用户", notes="根据手机号码来指定删除对象")
+    @ApiParam(name = "phone", value = "用户手机号码", required = true)
+    @RequestMapping(value="/deleteByPhone", method=RequestMethod.DELETE)
+    public String deleteUerByPhone(String phone) {
+        mapper.deleteUerByPhone(phone);
         return "success";
     }
 }
